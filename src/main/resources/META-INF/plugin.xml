@@ -1,0 +1,21 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <name>Simple Plugin</name>
+    <version>1.0</version>
+    <vendor email="you@example.com" url="http://example.com">Your Name</vendor>
+
+    <description>
+        A simple example plugin to show a message dialog.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <actions>
+        <action id="com.example.simpleplugin.ShowMessageAction"
+                class="org.example.demo.main"
+                text="Show Message"
+                description="Shows a simple message dialog">
+            <add-to-group group-id="ToolsMenu" />
+        </action>
+    </actions>
+</idea-plugin>
